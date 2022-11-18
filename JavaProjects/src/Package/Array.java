@@ -9,7 +9,5 @@ public class Array {
 		marks[1]=200;
 		marks[2]=300;
  		System.out.println(marks[1]);
-
 	}
-
 }

@@ -8,7 +8,5 @@ public class StringReplace {
 		String name2 = name1.replace('a','A');
 		System.out.println(name1);
 		System.out.println(name1 + " is get replaced by " + name2);
-
 	}
-
 }

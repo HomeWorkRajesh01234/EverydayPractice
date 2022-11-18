@@ -7,7 +7,5 @@ public class StringDelete {
 		StringBuffer sb = new StringBuffer("RandomType");
 		sb.delete(0, 2);
 		System.out.println(sb);
-
 	}
-
 }

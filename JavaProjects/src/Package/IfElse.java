@@ -24,23 +24,12 @@ public class IfElse {
 		String name="Mahesh",names;
 		System.out.println("Enter the names: ");
 		names = S.next();
-		if (name==names)
-			//names.equals(S);
+		if (names.equals(name))
 			System.out.println("Match");
 		else
 			System.out.println("Not match");
-			//Fourth Method
-		Scanner Si = new Scanner(System.in);
-		String Name;
-		System.out.println("Enter the Name: ");
-		Name = Si.next();
-		if (Name=="Ram")
-			System.out.println("Match");
-		else 
-			System.out.println("Not match");
 		sc.close();
 		S.close();
-		Si.close();
 	}
 
 }

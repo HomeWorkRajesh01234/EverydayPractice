@@ -1,19 +1,22 @@
 package Package;
 
-
+import java.util.Scanner;
 
 public class ZTemporary {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		float num1,num2;
+		Scanner sc = new Scanner (System.in);
+		int num = sc.nextInt();
 		
-		if (args.length!=0)
+		int revers = 0 ,reminder;
+		while (num<0);
 		{
-			num1 = Float.parseFloat(args[0]);
-			num2 = Float.parseFloat(args[1]);
-			System.out.println("sum of input numbers -");
-			System.out.println(num1 + num2);
-		}	
+			reminder= num%10;
+			revers = revers *10 + reminder;
+			num = num/10;
+		}
+		System.out.println("Revers number="+revers);
+		sc.close();
 	}
 }
