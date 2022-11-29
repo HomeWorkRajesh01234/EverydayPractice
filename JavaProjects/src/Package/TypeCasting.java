@@ -15,6 +15,12 @@ public class TypeCasting {
 		float d = 6.35f;
 		System.out.println("value of converting into int is : "+(int) d);
 		System.out.println("original Value "+d);
+		// Third Method
+		// Double to int TypeCasting
+		int i=20;
+		double g=40.47;
+		int add = (int)g+i;
+		System.out.println("add is "+add);
 	}
 }
 /* Priority

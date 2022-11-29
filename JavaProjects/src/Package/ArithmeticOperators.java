@@ -14,4 +14,4 @@ public class ArithmeticOperators {
 		double Mudulo = a % b;
 		System.out.println(Addition+"\n"+Subtraction+"\n"+Multiplication+"\n"+Division+"\n"+Mudulo);
 	}
-}
+} 

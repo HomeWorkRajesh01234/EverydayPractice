@@ -8,7 +8,7 @@ public class Pattern {
 	       {
 	    	   for (int j=1;j<=i;j++) //column
 	    	   {
-	    		   System.out.print("*");
+	    		   System.out.print("$");
 	    	   }
 	    	   System.out.println();
 	       }
