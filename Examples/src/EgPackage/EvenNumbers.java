@@ -22,6 +22,6 @@ public class EvenNumbers {
 			{
 				System.out.println("Even Numbers  "+i);
 			}
-		
+		sc.close();
 	}
 }
