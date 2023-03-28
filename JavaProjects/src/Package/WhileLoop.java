@@ -9,6 +9,7 @@ public class WhileLoop {
 		{
 			System.out.println(j);
 			j = j+1;
+			//j+=1;
 		}
 		// Second Method
 		Scanner sc = new Scanner(System.in);

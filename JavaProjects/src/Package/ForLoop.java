@@ -14,9 +14,9 @@ public class ForLoop {
 		Scanner var = new Scanner(System.in);
 		System.out.println("Enter the Number");
 		int n = var.nextInt();
-		for (int i=n; i<=10;i++) 
+		for (int i=n; i<=10;i++) ;
 		{
-			System.out.println(i);
+			System.out.println("i");
 		}
 		// Third Method
 		// Loop starts from j+1
@@ -26,8 +26,21 @@ public class ForLoop {
 	  //for (int j++; j<=10; j++)
 		{
 			System.out.println(j);
-			var.close();
 		}
-		
+		// Fourth Method
+		System.out.println("Enter the name and how many times to print");
+		String ss = var.next();
+		int n1 = var.nextInt();
+		for (int i = 1; i <= n1; i++) 
+		{
+			System.out.println(ss);
+		}
+		//
+		System.out.println("How its Working");
+		for(int i=0;i<5;i++)
+		{
+			System.out.println(i);
+		}
+		var.close();
 	}
 }

@@ -16,6 +16,7 @@ public class DataTypes {
 		// Non-Primitive Data Types
 		//Class,String,Arrays,Interfaces
 		System.out.println(b+"\n"+a+"\n"+s+"\n"+i+"\n"+f+"\n"+l+"\n"+d+"\n"+q);
+	
 	}
 
 }

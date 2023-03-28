@@ -20,24 +20,25 @@ public class App
 {
 	public static String addEmpatos(Connection con) throws SQLException
 	{
-		//int row=st1.executeUpdate("insert into empatos values(5,'Shital',50000)");
-		//int row2=st1.executeUpdate("insert into empatos values(6,'Rutuja',55000)");
-		//int row3=st1.executeUpdate("insert into empatos values(7,'Neha',60000)");
-		Scanner obj=new Scanner(System.in);
-		System.out.println("Enter the id:");
-		int id =obj.nextInt();
-		System.out.println("Enter the name:");
-		String name=obj.next();
-		System.out.println("Enter the salary:");
-		int salary=obj.nextInt();
-		try {
-			PreparedStatement pst = con.prepareStatement("insert into empatos values  ");
-			pst.setInt(1, id);
-			pst.setString(2,name);
-			pst.setInt(3, salary);
-			pst.execute();
-		}catch(SQLException e) {
-			e.printStackTrace();
+		try (//int row=st1.executeUpdate("insert into empatos values(5,'Shital',50000)");
+				//int row2=st1.executeUpdate("insert into empatos values(6,'Rutuja',55000)");
+				//int row3=st1.executeUpdate("insert into empatos values(7,'Neha',60000)");
+		Scanner obj = new Scanner(System.in)) {
+			System.out.println("Enter the id:"); 
+			int id =obj.nextInt();
+			System.out.println("Enter the name:");
+			String name=obj.next();
+			System.out.println("Enter the salary:");
+			int salary=obj.nextInt();
+			try {
+				PreparedStatement pst = con.prepareStatement("insert into empatos values  ");
+				pst.setInt(1, id);
+				pst.setString(2,name);
+				pst.setInt(3, salary);
+				pst.execute();
+			}catch(SQLException e) {
+				e.printStackTrace();
+			}
 		}
 		return "employee added";
 	}
@@ -55,15 +56,16 @@ public class App
 	
 	public static String deleteEmpatos(Connection con) throws SQLException
 	{
-		Scanner obj=new Scanner(System.in);
-		System.out.println("Enter the id:");
-		int id=obj.nextInt();
-		try {
-		PreparedStatement pst=con.prepareStatement("delete from empatos where id=? ");
-    	pst.setInt(1, id);
-    	pst.execute();
-		}catch(SQLException e) {
-			e.printStackTrace();
+		try (Scanner obj = new Scanner(System.in)) {
+			System.out.println("Enter the id:");
+			int id=obj.nextInt();
+			try {
+			PreparedStatement pst=con.prepareStatement("delete from empatos where id=? ");
+			pst.setInt(1, id);
+			pst.execute();
+			}catch(SQLException e) {
+				e.printStackTrace();
+			}
 		}
 		return "delete employee";
 	}

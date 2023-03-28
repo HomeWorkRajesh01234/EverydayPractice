@@ -15,11 +15,18 @@ public class DQueue {
 		ds.add("Fifth");
 		ds.addFirst("Third");
 		ds.addLast("Fourth");
+		System.out.println(ds);
 		ds.forEach(s-> System.out.println(s));
+		System.out.println();
+		// i think for first element
 		System.out.println(ds.element());
+		// peek means just see that which element is in top
 		System.out.println("Polling element" + ds.peek());
+		//
 		System.out.println(ds.peek());
 		ds.remove();
+		System.out.println("Removing");
+		System.out.println(ds);
 		ds.poll();
 		
 		// Second Method
